@@ -1,118 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="relative">
 
-</head>
-
-<body>
-
-    <div class="">
-
-        <nav class="font-poppins text-sm py-5  ">
-
-            <!-- flex start  -->
-            <div class="flex justify-between container mx-auto px-10 items-center">
-        
-                <!-- 1st child  -->
-                <div class="flex justify-center items-center">
-                    <i class="fa-solid text-4xl fa-hat-cowboy"></i>
-                    <h1 class="text-4xl">Randly</h1>
-                </div>
-        
-                <!-- 2nd child  -->
-                <div>
-                    <ul class="flex space-x-5 font-semibold ">
-                        <li class="">
-                            <a href="" class="justify-center items-start ">
-                                <span>Home</span> 
-                                <i class="fa-solid fa-chevron-down text-slate-600"></i>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <span>Pages</span>
-                                <i class="fa-solid fa-chevron-down text-slate-600 "></i>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <span>Portfolio</span>
-                                <i class="fa-solid fa-chevron-down text-slate-600"></i>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <span>Blog</span>
-                                <i class="fa-solid fa-chevron-down text-slate-600"></i>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <span>Contact</span>
-                                <i class="fa-solid fa-chevron-down text-slate-600"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-        
-                <!-- 3rd child  -->
-                <div>
-                    <button class="px-4 text-white py-2 bg-primary rounded-lg">
-                        <i class="fa-regular fa-message"></i>
-                        Let's Talk
-                    </button>
-                </div>
-            </div>
-        
-        </nav>
+      <svg
+        class="absolute right-0 -z-10"
+        xmlns="http://www.w3.org/2000/svg"
+        width="600"
+        height="600"
+        fill="none"
+        viewBox="0 0 200 200"
+        version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:svgjs="http://svgjs.dev/svgjs"
+      >
+        <path
+          fill='url("#SvgjsLinearGradient1144")'
+          d="M165.963 134.037c-5.467 5.467-14.332 5.467-19.799 0l-24.137-24.138c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L190.101 90.1c5.467 5.468 5.467 14.332 0 19.799l-24.138 24.138Zm-112.127 0c-5.467 5.467-14.332 5.467-19.8 0L9.9 109.899c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L77.973 90.1c5.468 5.468 5.468 14.332 0 19.799l-24.137 24.138ZM109.9 190.1c-5.468 5.468-14.332 5.468-19.8 0l-24.137-24.137c-5.467-5.467-5.467-14.332 0-19.799l24.138-24.137c5.467-5.468 14.331-5.468 19.799 0l24.137 24.137c5.467 5.467 5.467 14.332 0 19.799L109.9 190.1Zm0-112.127c-5.468 5.468-14.332 5.468-19.8 0L65.963 53.836c-5.467-5.468-5.467-14.332 0-19.8L90.101 9.9c5.467-5.467 14.331-5.467 19.799 0l24.137 24.138c5.467 5.467 5.467 14.331 0 19.799L109.9 77.973Z"
+        ></path>
+        <defs>
+          <linearGradient
+            gradientTransform="rotate(0 0.5 0.5)"
+            id="SvgjsLinearGradient1144"
+          >
+            <stop
+              stop-opacity=" 1"
+              stop-color="rgba(105, 234, 203)"
+              offset="0"
+            ></stop>
+            <stop
+              stop-opacity=" 1"
+              stop-color="rgba(234, 204, 248)"
+              offset="0.48"
+            ></stop>
+            <stop
+              stop-opacity=" 1"
+              stop-color="rgba(85, 68, 213)"
+              offset="1"
+            ></stop>
+          </linearGradient>
+        </defs>
+      </svg> 
 
 
-        <!-- Hero  -->
-        <section class=" font-poppins ">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-             
-                <!-- 1st child  -->
-            <div class="w-1/2 space-y-5 text-slate-600 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-               <h1 class="font-bold text-3xl">Best business agency</h1>
-               <h1 class="text-5xl font-semibold leading-tight">
-                Expert teams for help your business challenge
-               </h1>
+      <nav class="font-poppins py-6 text-sm">
+        <!-- flex start -->
+        <div class="flex container mx-auto justify-between items-center px-10">
+          <!-- 1st child -->
+          <div class="flex justify-between items-center">
+            <i class="fa-solid fa-caret-down text-4xl text-secondary"></i>
+            <h1 class="text-2xl ml-2">Ranly</h1>
+          </div>
 
-               <div>
-                <button class="bg-primary rounded-lg text-slate-300 py-2 px-3">Get Started</button>
-                <button class="inline-flex gap-x-3 lowercase font-semibold justify-center items-center  py-2 px-3">
-                    <i class="fa-solid fa-circle-play text-2xl text-primary"></i>
-                    Watch Video 
-                    
+          <!-- 2nd child -->
+          <div class="flex font-semibold">
+            <ul class="flex space-x-5">
+              <li>
+                <a href="" class="">
+                  <span>Home</span>
+                  <i class="fa-solid fa-chevron-down text-slate-600 ml-1"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="">
+                  <span>Pages</span>
+                  <i class="fa-solid fa-chevron-down text-slate-600 ml-1"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="">
+                  <span>Portfolio</span>
+                  <i class="fa-solid fa-chevron-down text-slate-600 ml-1"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="">
+                  <span>Blog</span>
+                  <i class="fa-solid fa-chevron-down text-slate-600 ml-1"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="">
+                  <span>Contact</span>
+                  <i class="fa-solid fa-chevron-down text-slate-600 ml-1"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                </button>
-               </div>
-            </div>
-             
-              <!-- 2nd child  -->
-              <div class="w-1/2 ml-20 lg:max-w-lg ">
-                <div class="flex flex-wrap justify-between  items-center  gap-10">
-                    <img class="w-52 rounded-xl " src="../photos/1-hero/hero1.jpg" alt="">
-                    <img class="w-52 rounded-xl " src="../photos/1-hero/hero2.jpg" alt="">
-                    <img class="w-52 mx-auto rounded-xl" src="../photos/1-hero/hero3.jpg" alt="">
-                </div>
-              </div>
-            </div>
-          </section>
-
-    
-
+          <!-- 3rd child -->
+          <div>
+            <button class="px-4 py-2 border-2 border-primary  bg-primary rounded-md text-white hover:text-red-600 hover:bg-white duration-200 ease-linear">
+              <i class="fa-regular fa-message"></i>
+              Let's Talk
+            </button>
+          </div>
+        </div>
+      </nav>
     </div>
-  
-</body>
 
+    <!-- hero -->
+    <section class="font-poppins">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+
+        <!-- 1st child -->
+          <div class="w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-2">
+            <h1 class="font-bold text-slate-700 text-3xl">Best business agency</h1>
+            <h1 class="font-bold text-slate-700 text-5xl leading-tight"> Expert teams for help your business challenge</h1>
+            
+            <div class="">
+                <button class="bg-primary px-4 py-2 text-slate-200 rounded-md">Get Started</button>
+                <button class="inline-flex justify-center items-center px-4 py-2 text-slate-500 rounded-md gap-x-2 lowercase font-semibold"><i class="fa-solid fa-circle-play text-primary text-2xl "></i>Watch Video</button>
+            </div>
+            
+          </div>
+
+          <!-- 2nd child -->
+          <div class="w-1/2 ml-24 lg:max-w-lg">
+            <div class="flex flex-wrap gap-10 justify-center items-center">
+                <img class="w-56 rounded-lg"  src="../photos/1-hero/hero1.jpg" alt="">
+                <img class="w-56 rounded-lg" src="../photos/1-hero/hero2.jpg" alt="">
+                <img class="w-56 rounded-lg" src="../photos/1-hero/hero3.jpg" alt="">
+            </div>
+        </div>
+      </section>
+
+      <!-- card section  -->
+      <section class="font-poppins container mx-auto mb-24">
+        <div class="flex  justify-between gap-10">
+          <!-- 1st child -->
+          <div class="max-w-xs text-center border shadow-xl px-12 py-10 space-y-5 relative">
+            <h1 class="text-2xl font-bold">Branding</h1>
+            <p class="text-lg">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+            </p>
+            <img class="w-20 mx-auto" src="../photos/2-png/analytics.png" alt="">
+
+            <div class="absolute  left-0 bottom-0 w-16 h-16 bg-violet-500 ">
+              <h1 class="text-violet-200 text-3xl py-4 ">01</h1> 
+            </div>
+
+            
+          </div>
+
+          <!-- 2nd child -->
+          <div class="max-w-xs text-center border shadow-xl  px-12 py-10 space-y-5 relative translate-y-10">
+            <h1 class="text-2xl font-bold">E-commerce</h1>
+            <p class="text-lg">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+            </p>
+            <img class="w-20 mx-auto pb-16" src="../photos/2-png/growth.png" alt="">
+
+            <div class="absolute flex justify-center items-center left-0 bottom-0 w-16 h-16 bg-violet-500">
+              <h1 class="text-violet-200 text-3xl">02</h1>
+            </div>
+          </div>
+
+          <!-- 3rd child -->
+          <div class="max-w-xs text-center border shadow-xl  px-12 py-10 space-y-5 relative ">
+            <h1 class="text-2xl font-bold">Mobile apps</h1>
+            <p class="text-lg">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+            </p>
+            <img class="w-20 mx-auto pb-16" src="../photos/2-png/bar-graph.png" alt="">
+
+            <div class="absolute flex justify-center items-center left-0 bottom-0 w-16 h-16 bg-violet-500">
+              <h1 class="text-violet-200 text-3xl">03</h1>
+            </div>
+          </div>
+
+          <!-- 4th child -->
+          <div class="max-w-xs text-center border shadow-xl px-12 py-10 space-y-5 relative translate-y-10 ">
+            <h1 class="text-2xl font-bold">Marketing</h1>
+            <p class="text-lg">
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+            </p>
+            <img class="w-20 mx-auto pb-16" src="../photos/2-png/pie-chart.png" alt="">
+
+            <div class="absolute flex justify-center items-center left-0 bottom-0 w-16 h-16 bg-violet-500">
+              <h1 class="text-violet-200 text-3xl">04</h1>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+      <!-- image section -->
+      <section class="h-screen bg-violet-800">
+        <div class="flex container mx-auto p-9 ">
+          <div class="w-1/2 flex relative ">
+             <img class="w-[600px] object-cover rounded-lg " src="../photos/about.jpg" alt="">
+             <div class="flex justify-center items-center flex-wrap py-5 absolute left-8 bottom-0 w-40 h-52 bg-red-600 rounded-lg">
+              <span class="text-7xl font-bold text-violet-200 py-2">12</span>
+              <span class="text-violet-200 text-lg font-semibold uppercase px-14">years</span>
+              <span class="text-violet-200 text-lg font-semibold uppercase px-14">experience</span>
+             </div>
+          </div>
+
+          <div class="w-1/2 text-violet-200 ml-12">
+            <h1 class="text-5xl font-bold mb-5">Follow our news for growth your online business</h1>
+            <p class="text-lg font-semibold">
+              Replacing a maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create. maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create.
+            </p>
+            
+            <div class="mt-5">
+                <i class="fa-regular fa-square-check text-2xl text-violet-200"></i>
+                <span class="text-violet-200 text-lg font-semibold ml-2">Innovation idea latest business tecnology maintains the amount</span>
+            </div>
+
+            <div class="mt-5">
+              <i class="fa-regular fa-square-check text-2xl text-violet-200"></i>
+              <span class="text-violet-200 text-lg font-semibold ml-2">Digital content marketing online clients plateform to define</span>
+          </div>
+
+          <div class="mt-5">
+            <i class="fa-regular fa-square-check text-2xl text-violet-200"></i>
+            <span class="text-violet-200 text-lg font-semibold ml-2">Innovation idea latest business tecnology help agencies.</span>
+        </div>
+        <div>
+
+          <!-- <div class="flex flex-wrap mt-8 w-1/2">
+            <div class="flex flex-wrap bg-slate-500 ">
+              <img class="w-20 " src="../photos/2-png/analytics.png" alt="">
+            <span class="text-4xl font-bold text-violet-200 ml-2 ">110 </span>
+            <i class="fa-solid fa-plus text-2xl text-violet-200 font-bold mt-2 ml-2"></i>
+            <span class="text-xl -space-y-5 font-bold text-violet-200 ml-24 ">World countries</span>
+            </div>
+          </div> -->
+
+          <!-- parent -->
+          <div class="flex space-x-64 w-1/2">
+            <div class="flex mt-8 relative p-1 w-[400px] ">
+
+              <div class=" w-[100px]">
+                <img class="w-16 " src="../photos/2-png/analytics.png" alt="">
+              </div>
+             
+                <div class="flex flex-wrap absolute top-1 left-20 w-[200px] ">
+                 <span class="text-3xl font-bold text-violet-200 ml-2 ">110 </span>
+              <i class="fa-solid fa-plus text-2xl text-violet-200 font-bold mt-2 ml-2"></i>
+              <span class="text-xl font-bold text-violet-200 ml-3 mt-1 ">World countries</span>
+                </div>
+            </div>  
+            
+            <div class="flex mt-8 relative p-1 w-[400px] ">
+
+              <div class=" w-[100px]">
+                <img class="w-16" src="../photos/2-png/bar-graph.png" alt="">
+              </div>
+             
+                <div class="flex flex-wrap absolute top-1 left-20 w-[200px] ">
+                 <span class="text-3xl font-bold text-violet-200 ml-2 ">1200 </span>
+              <i class="fa-solid fa-plus text-2xl text-violet-200 font-bold mt-2 ml-2"></i>
+              <span class="text-xl font-bold text-violet-200 ml-3 mt-1 ">Projects Completed</span>
+                </div>
+            </div>  
+          </div>
+
+          
+
+        </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- card section -->
+      <section class="h-[800px] py-14 ">
+        <div class="grid grid-cols-3 container mx-auto gap-5">
+          <div class="bg-slate-100 p-10 border h-[300px] shadow-xl ">
+            <h1 class="text-4xl font-bold">Provide our best services</h1>
+            <p class="text-lg  text-slate-600 font-medium mt-5 mb-7">Our consultants opt in to the projects they genuinely want to work on.</p>
+            <button class="bg-red-600 px-5 py-3 text-white text-xl font-semibold border-2 border-red-500 hover:bg-white hover:text-red-600 duration-200 ease-linear ">All Services</button>
+          </div>
+
+          <div class="bg-slate-100 p-10 border h-[300px] shadow-xl ">
+            <img class="w-20" src="../photos/2-png/s1.png" alt="">
+            <h1 class="text-2xl font-bold text-slate-700 hover:text-red-600 mt-3 mb-5 ">Mobile apps</h1>
+            <p class="text-lg text-slate-600 font-medium">Dummy text is also used to demonstrate the appearance of different. consultants opt in to the projects</p>
+          </div>
+
+          <div class="bg-slate-100 p-10 border h-[300px] shadow-xl ">
+            <img class="w-20" src="../photos/2-png/s2.png" alt="">
+            <h1 class="text-2xl font-bold text-slate-700 hover:text-red-600 mt-3 mb-5">E-commerce</h1>
+            <p class="text-lg text-slate-600 font-medium">Dummy text is also used to demonstrate the appearance of different. consultants opt in to the projects</p>
+          </div>
+
+          <div class="bg-slate-100 p-10 border h-[300px] shadow-xl ">
+            <img class="w-20" src="../photos/2-png/s3.png" alt="">
+            <h1 class="text-2xl font-bold text-slate-700 hover:text-red-600 mt-3 mb-5">Web application</h1>
+            <p class="text-lg text-slate-600 font-medium">Dummy text is also used to demonstrate the appearance of different. consultants opt in to the projects</p>
+          </div>
+
+          <div class="bg-slate-100 p-10 border h-[300px] shadow-xl ">
+            <img class="w-20" src="../photos/2-png/s4.png" alt="">
+            <h1 class="text-2xl font-bold text-slate-700 hover:text-red-600 mt-3 mb-5">Digital marketing</h1>
+            <p class="text-lg text-slate-600 font-medium">Dummy text is also used to demonstrate the appearance of different. consultants opt in to the projects</p>
+          </div>
+
+          <div class="bg-slate-100 p-10 border h-[300px] shadow-xl ">
+            <img class="w-20" src="../photos/2-png/s5.png" alt="">
+            <h1 class="text-2xl font-bold text-slate-700 hover:text-red-600 mt-3 mb-5">Products design</h1>
+            <p class="text-lg text-slate-600 font-medium">Dummy text is also used to demonstrate the appearance of different. consultants opt in to the projects</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- image section -->
+      <section class="h-[100vh] bg-violet-800">
+        <div class="flex flex-row-reverse container mx-auto p-9 ">
+          <div class="flex relative bg-white mx-5 my-4 rounded-lg">
+            
+                <iframe class="rounded-lg"  width="560" height="500" src="https://www.youtube.com/embed/C9nNK9dJfd8?si=0rRABn7PvcVAPZbH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+
+          </div>
+
+          <div class="w-1/2 text-violet-200 ml-12 mx-5 ">
+            <h1 class="text-5xl font-bold mt-10 mb-5 leading-tight">Follow our news for growth your online business</h1>
+            <div class="flex justify-between text-center mt-10 ">
+              <p class="text-2xl font-semibold font-sans">
+                We are the best web platform in the world?
+              </p>
+              <button><i class="fa-solid fa-plus text-2xl mt-1"></i></button>
+            </div>
+
+            <div class="flex justify-between text-center mt-10 ">
+              <p class="text-2xl font-semibold font-sans">
+                World class creative experts team members?
+              </p>
+              <button><i class="fa-solid fa-plus text-2xl mt-1"></i></button>
+
+            </div> 
+
+            <div class="flex justify-between text-center mt-10 ">
+              <p class="text-2xl font-semibold font-sans">
+                Clients satisfaction make company value?
+              </p>
+              <button><i class="fa-solid fa-plus text-2xl mt-1"></i></button>
+
+            </div>
+          
+        </div>
+          </div>
+
+        </div>
+      </section> 
+
+      <!-- blog section -->
+      <section class="bg-slate-50 h-[100vh]">
+        <div class="flex container mx-auto mt-10 gap-10">
+          <div class=" h-[550px] bg-white py-5 px-5 mt-5 ">
+            <div class="relative">
+              <img class="w-[384px]" src="../photos/4-blog/b1.jpg" alt="">
+            <div class="bg-primary flex flex-col justify-center items-center w-20 h-20 absolute -bottom-7 right-5">
+              <h1 class="text-white text-4xl font-bold">15</h1>
+              <h1 class="text-white font-lg font-medium">May, 20</h1>
+            </div>
+            </div>
+            <div class="py-6">
+              <i class="fa-solid fa-user text-primary mr-2 "></i><span class="text-slate-500 text-lg" >Admin</span>
+            
+              <i class="fa-regular fa-comment text-primary ml-3 mr-1"></i><span class="text-slate-500 text-lg">16</span>
+            </div>
+            <h1 class="text-2xl font-semibold -mt-2">Creative design clients response is better</h1>
+            <p class="text-lg text-slate-600 mt-4">Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+            <p class="text-lg font-medium mt-4">Read more <i class="fa-solid fa-arrow-right ml-2"></i></p>
+          </div>
+
+          <div class=" h-[550px] bg-white py-5 px-5 mt-5 ">
+            <div class="relative">
+              <img class="w-[384px]" src="../photos/4-blog/b3.jpg" alt="">
+            <div class="bg-primary flex flex-col justify-center items-center w-20 h-20 absolute -bottom-7 right-5">
+              <h1 class="text-white text-4xl font-bold ">15</h1>
+              <h1 class="text-white font-lg font-medium ">June, 20</h1>
+            </div>
+            </div>
+            <div class="py-6">
+              <i class="fa-solid fa-user text-primary mr-2 "></i><span class="text-slate-500 text-lg" >Admin</span>
+            
+              <i class="fa-regular fa-comment text-primary ml-3 mr-1"></i><span class="text-slate-500 text-lg">15</span>
+            </div>
+            <h1 class="text-2xl font-semibold -mt-2">Creative design clients response is better</h1>
+            <p class="text-lg text-slate-600 mt-4">Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+            <p class="text-lg font-medium mt-4">Read more <i class="fa-solid fa-arrow-right ml-2"></i></p>
+          </div>
+
+          <div class=" h-[550px] bg-white py-5 px-5 mt-5 ">
+            <div class="relative">
+              <img class="w-[384px]" src="../photos/4-blog/b4.jpg" alt="">
+            <div class="bg-primary flex flex-col justify-center items-center w-20 h-20 absolute -bottom-7 right-5">
+              <h1 class="text-white text-4xl font-bold ">15</h1>
+              <h1 class="text-white font-lg font-medium">Jul, 16</h1>
+            </div>
+            </div>
+            <div class="py-6">
+              <i class="fa-solid fa-user text-primary mr-2 "></i><span class="text-slate-500 text-lg" >Admin</span>
+            
+              <i class="fa-regular fa-comment text-primary ml-3 mr-1"></i><span class="text-slate-500 text-lg">07</span>
+            </div>
+            <h1 class="text-2xl font-semibold -mt-2">Creative design clients response is better</h1>
+            <p class="text-lg text-slate-600 mt-4">Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+            <p class="text-lg font-medium mt-4">Read more <i class="fa-solid fa-arrow-right ml-2"></i></p>
+          </div>
+        </div>
+      </section>
+
+  <script src="></script>
+  </body>
 </html>
